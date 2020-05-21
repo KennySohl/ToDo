@@ -1,2 +1,4 @@
 # ToDo
-A Spring Java application for a To Do list
+A Spring Java application for a To Do list.
+
+
