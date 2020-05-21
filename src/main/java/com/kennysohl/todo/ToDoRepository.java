@@ -19,6 +19,7 @@ public class ToDoRepository {
         this.dataSource = dataSource;
     }
 
+    //The save message method.
     public ToDo saveToDos(ToDo toDo) {
         Connection c = DataSourceUtils.getConnection(dataSource);
         try {
@@ -54,6 +55,7 @@ public class ToDoRepository {
             return null;
             }
 
+    //The select all to do list method
     public List<ToDo> getToDos() {
         Connection c = DataSourceUtils.getConnection(dataSource);
 
@@ -77,6 +79,7 @@ public class ToDoRepository {
         return null;
     }
 
+    //The delete a list item from the databas method.
     public boolean deleteToDos(int id) {
         try {
             Connection c = DataSourceUtils.getConnection(dataSource);

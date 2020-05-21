@@ -15,6 +15,7 @@ public class ToDoController {
         this.toDoService = toDoService;
     }
 
+    //Saves the todos
     @PostMapping("")
     @ResponseBody
     public ResponseEntity<ToDo> saveToDo(@RequestBody ToDoData data){
@@ -25,12 +26,14 @@ public class ToDoController {
         return ResponseEntity.ok(saved);
     }
 
+    //gets the list with todos
     @GetMapping
     public ResponseEntity<List<ToDo>> getToDos(){
         List<ToDo> toDos = toDoService.getToDos();
         return ResponseEntity.ok(toDos);
     }
 
+    //Remove the todos
     @DeleteMapping("/{id}")
     public ResponseEntity<String> deleteToDo(@PathVariable int id){
         boolean success = toDoService.delete(id);
