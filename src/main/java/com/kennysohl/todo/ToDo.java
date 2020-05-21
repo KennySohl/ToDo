@@ -2,8 +2,6 @@ package com.kennysohl.todo;
 
 import javax.persistence.*;
 
-import org.hibernate.annotations.Table;
-
 @Entity
 @Table(name = "todos")
 public class ToDo {
