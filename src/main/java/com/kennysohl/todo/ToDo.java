@@ -1,7 +1,5 @@
 package com.kennysohl.todo;
 
-import java.util.Date;
-
 public class ToDo {
     private Integer id;
     private String text;
