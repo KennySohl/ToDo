@@ -11,6 +11,6 @@ This application uses JDBC to store the ToDo list.
 -Remove a ToDo item
 
 
-I Did not add a frontend interface to focus on the backend application. 
+I did not add a frontend interface to focus on the backend application. 
 
 I did not change anything from my User Stories or Entity–relationship model 
